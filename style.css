@@ -76,7 +76,7 @@ body{
 .score-category{
    width: 15em;
 }
-#scores{
+.scores{
    display: flex;
    padding: .8em .4em;
    border-radius: 10px;
@@ -84,7 +84,10 @@ body{
    background: #FFF6F5;
    position: relative;
 }
-#number{
+.category{
+   padding-left: .5em;
+}
+.number{
    position: absolute;
    display: flex;
    right: 1.5em;
@@ -96,4 +99,17 @@ button{
    width: 18em;
    height: 3em;
    font-weight: bold;
+}
+
+@media (max-width: 768px){
+   .container{
+      left: 75px;
+      top:50px;
+   }
+}
+@media (max-width: 375px){
+   .container{
+      left: 35px;
+      flex-direction: column;
+   }
 }
